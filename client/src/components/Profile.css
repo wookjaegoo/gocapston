@@ -1,0 +1,372 @@
+/*
+
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 310). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox and floats are used as a fallback so that browsers which don't support grid will still recieve a similar layout.
+
+*/
+
+/* Base Styles */
+
+:root {
+    font-size: 10px;
+   
+}
+
+
+
+
+.carousel {
+  margin-top: 50px;
+  display: grid;
+  grid-column: 5/14;
+  grid-row: 2/9;
+  
+  width: 23rem;
+  height: 23rem;
+  perspective: 500px;
+  transform-style: preserve-3d;
+}
+
+.card-container {
+  position: absolute;
+  display: grid;
+  grid-column: 5/13;
+  grid-row: 2/9;
+  
+  transform: rotateY(calc(var(--offset) * 50deg)) scaleY(calc(1 + var(--abs-offset) * -0.4)) translateZ(calc(var(--abs-offset) * -30rem)) translateX(calc(var(--direction) * -3rem));
+  filter: blur(calc(var(--abs-offset) * 1rem));
+  transition: all 0.3s ease-out;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background-color: hsl(280deg, 40%, calc(100% - var(--abs-offset) * 50%));
+  border-radius: 1rem;
+  color: #9ca3af;
+  text-align: justify;
+  transition: all 0.3s ease-out;
+}
+.card h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 0.7em;
+  color: #1f2937;
+}
+.card p,
+.card h2 {
+  transition: all 0.3s ease-out;
+  opacity: var(--active);
+}
+
+.nav {
+  color: white;
+  font-size: 5rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  z-index: 2;
+  cursor: pointer;
+  user-select: none;
+  background: unset;
+  border: unset;
+}
+.nav.left {
+  
+  
+  left: 50px;
+  margin-top: 530px;
+  transform: translateX(-100%) translatey(-50%);
+}
+.nav.right {
+  margin-top: 530px;
+  
+  right: -220px;
+  transform: translateX(100%) translatey(-50%);
+}
+
+
+.Profile{
+
+  display: grid;
+  grid-column: 1/13;
+  grid-row: 2/9;
+
+  overflow: hidden;
+  background: linear-gradient(45deg, #8b5cf6, #ec4899, #961b58, #6749ad);
+  background-size: 400% 400%;
+  font-family: "Montserrat", sans-serif;
+  animation: AnimationName 15s ease infinite;
+
+
+}
+
+.QRcode{
+  display: grid;
+  grid-row: 2/8;
+  grid-column: 7/13;
+}
+
+.ProfileBlock
+{
+  width: 500px;
+  height: 500px;
+  display: block;
+
+}
+.wht-pre
+{
+  white-space:pre-wrap;
+}
+
+
+.contained
+{
+  margin-top: 80%;
+}
+
+.Authentication
+{
+
+color: black;
+width: 500px;
+display: grid;
+grid-column: 7/13;
+grid-row: 2/8;
+align-content: center;
+text-align: center;
+
+box-sizing: border-box;
+font-family: 'Cafe24Ssurround';
+
+background: linear-gradient(-45deg,#00206d, #120a4d, #23a6d5, #23d5ab);
+background-size: 400% 400%;
+animation: AnimationName 15s ease infinite;
+
+border-radius: 20px 20px  0 0; 
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+
+text-align: center;
+ 
+}
+
+.prbottom{
+  position:relative;
+  bottom:-50px;
+  width: 500px;
+  background-color: white;
+  height: 110px;
+  border-radius: 0 0 20px 20px  ; 
+
+}
+
+.prbottom2{
+  position:relative;
+  bottom: -45%;
+
+  width: 500px;
+  background-color: white;
+  height: 110px;
+  border-radius: 0 0 20px 20px  ; 
+
+}
+
+.Authentication2
+{
+
+  color: black;
+  
+
+width: 500px;
+
+display: grid;
+grid-column: 7/13;
+grid-row: 2/8;
+align-content: center;
+text-align: center;
+
+box-sizing: border-box;
+font-family: 'Cafe24Ssurround';
+
+background: linear-gradient(-45deg,#00206d, #120a4d, #23a6d5, #23d5ab);
+background-size: 400% 400%;
+animation: AnimationName 15s ease infinite;
+
+border-radius: 20px 20px  0 0; 
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+
+text-align: center;
+
+}
+
+.Authentication3
+{
+
+ 
+color: black;
+width: 500px;
+display: grid;
+grid-column: 10/13;
+grid-row: 2/8;
+align-content: center;
+text-align: center;
+box-sizing: border-box;
+font-family: 'Cafe24Ssurround';
+background: linear-gradient(-45deg,#00206d, #120a4d, #23a6d5, #23d5ab);
+background-size: 400% 400%;
+animation: AnimationName 15s ease infinite;
+
+border-radius: 20px 20px  0 0; 
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+
+text-align: center;
+position: relative;
+}
+
+.animatedimage{
+  width: 200px;
+}
+
+
+@media screen and (max-width: 400px) {
+  .animatedimage
+{
+  width: 150px;
+
+}
+
+.nav.left {
+  
+  margin-top: 470px;
+  left: 30px;
+}
+.nav.right {
+  
+  margin-top: 470px;
+  right: -70px;
+}
+
+.carousel {
+  display: grid;
+  grid-column: 2/14;
+  grid-row: 2/9;
+  margin-top: 20px;
+} 
+
+.card-container {
+  margin-left: 15px;
+}
+
+
+  .Authentication
+{
+
+width: 303px;
+
+
+}
+
+  .Authentication2
+{
+
+width: 303px;
+
+}
+
+.Profile{
+
+ 
+width: 390px;
+
+}
+
+
+.prbottom{
+  width: 303px;
+ 
+}
+.prbottom2{
+  width: 303px;
+  bottom: -50%;
+
+ 
+}
+
+
+
+  .Procedure
+{
+
+  
+  color: black;
+  margin-top: 100px;
+height: 400px;
+width: 300px;
+
+display: grid;
+
+grid-column: 7/13;
+grid-row: 2/8;
+align-content: center;
+text-align: center;
+
+box-sizing: border-box;
+font-family: 'Cafe24Ssurround';
+  
+}
+
+.container {
+
+  
+  background: linear-gradient(-45deg,#00206d, #120a4d, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: AnimationName 15s ease infinite;
+
+  border-radius: 20px 20px  0 0; 
+    height: 400px;
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  text-align: center;
+}
+
+
+.ProDetail1
+{
+  
+  position: relative;
+  height:90px;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  width: 300px;
+  
+}
+
+.ProDetail2
+{
+  margin-top: 250px;
+  width: 280px;
+  margin-left: 10px;
+}
+
+}
+
+
+
+
+
