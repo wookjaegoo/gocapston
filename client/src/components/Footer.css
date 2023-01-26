@@ -1,0 +1,203 @@
+
+
+@font-face {
+  font-family: 'Cafe24Ssurround';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.container {
+
+  
+  background: linear-gradient(-45deg,#00206d, #120a4d, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: AnimationName 15s ease infinite;
+
+  border-radius: 20px 20px  0 0; 
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  text-align: center;
+}
+
+.Deploys
+{
+  
+display: grid;
+grid-column: 1/13;
+grid-row: 2/9;
+background: linear-gradient(45deg, #8b5cf6, #ec4899, #961b58, #6749ad);
+  background-size: 400% 400%;
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+
+.Procedure
+{
+
+  
+  color: black;
+height: 600px;
+width: 500px;
+
+display: grid;
+
+grid-column: 7/13;
+grid-row: 2/8;
+align-content: center;
+text-align: center;
+
+box-sizing: border-box;
+font-family: 'Cafe24Ssurround';
+  
+}
+
+.ProDetail2
+{
+  margin-top: 370px;
+}
+
+.ProDetail1
+{
+  
+  position: relative;
+  height:110px;
+  
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  
+}
+
+
+.custom-btn {
+
+  font-family: 'Cafe24Ssurround';
+  
+  font-weight: bold;
+  width: 140px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-weight: 500;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.custom-btn2 {
+
+  font-family: 'Cafe24Ssurround';
+  
+  font-weight: bold;
+  width: 110px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-weight: 500;
+  
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+} 
+
+@media screen and (max-width: 400px) {
+  .Deploys {
+    position: relative;
+    width: 390px;
+  }
+
+
+  .Procedure
+{
+
+  
+  color: black;
+  margin-top: 100px;
+height: 400px;
+width: 300px;
+
+display: grid;
+
+grid-column: 7/13;
+grid-row: 2/8;
+align-content: center;
+text-align: center;
+
+box-sizing: border-box;
+font-family: 'Cafe24Ssurround';
+  
+}
+
+.container {
+
+  
+  background: linear-gradient(-45deg,#00206d, #120a4d, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: AnimationName 15s ease infinite;
+
+  border-radius: 20px 20px  0 0; 
+    height: 400px;
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  text-align: center;
+}
+
+
+.ProDetail1
+{
+  
+  position: relative;
+  height:90px;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  width: 300px;
+  
+}
+
+.ProDetail2
+{
+  margin-top: 250px;
+  width: 280px;
+  margin-left: 10px;
+}
+
+}
